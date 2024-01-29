@@ -1,0 +1,14 @@
+Feature: Compose Functionality in Gmail
+
+  Scenario: Verify Compose Functionality with Specific Subject and Body
+    Given the user is logged into Gmail
+    And the Gmail inbox is accessible
+    When the user clicks on the "Compose" button
+    And enters a valid recipient email address
+    And enters the subject as "Incubyte"
+    And enters the body as "QA test for Incubyte"
+    And clicks on the "Send" button
+    Then a confirmation message should be displayed
+    And the sent email should be present in the "Sent" folder
+    And the sent email should have the subject "Incubyte"
+    And the sent email should have the body "QA test for Incubyte"

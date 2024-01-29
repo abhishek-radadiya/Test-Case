@@ -1,0 +1,40 @@
+Test Case ID: TC_001
+
+Title: To verify Compose Functionality in Gmail
+
+Objective: To ensure that the compose function in Gmail successfully sends an email with the specified body and subject
+
+Preconditions:
+1. User is logged into Gmail
+2. The Gmail inbox is accessible
+
+Test-Steps:
+Action 1. Navigate to "Compose" and click on the "Compose" button/icon to open a new email composition window
+Expected result 1: "New Message"[web] or a blank window should open successfully
+
+Action 2. Enter a valid recipient email address in the "To" field,
+Expected result 2: User should able to add recipient email address successfully
+
+Action 3. In the "Subject" field, enter the text "Incubyte"
+Expected result 3: User should able to add subject successfully
+
+Action 4. In the email body section, enter the text " QA test for Incubyte"
+Expected result 4: User should able to enter data in body of email successfully 
+
+Action 5. Click on the "Send" button/icon to send the email
+Expected result 5: User should able to send an email and a confirmation message should appears as "Message sent"[web]/"Sent"
+
+Action 6. Navigate to the "Sent" folder in Gmail and check list of sent mails
+Expected result 6: User should able to find recently sent mail in "Sent" folder of Gmail
+
+Action 7. Open the recently sent email and verify that the subject, body and time
+Expected result 7: User should see subject as "Incubyte", the body as " QA test for Incubyte", and corrent time
+
+Expected outcome: 
+1. The user should be able to successfully compose and send an email with the specified subject and body
+2. A confirmation message should be displayed after sending the email
+3. The sent email should be present in the "Sent" folder with the correct subject and body
+
+Notes:
+1. To complete entire E2E cycle, ensure that the recipient received an email with "Incubyte" subject and " QA test for Incubyte" body
+2. To ensure cross-browser/device compatibility, perform the test on different browsers/devices

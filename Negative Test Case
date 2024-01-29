@@ -1,0 +1,63 @@
+Negative Test Cases:
+
+Scenario 1: Empty "To"/recipient field
+
+Action 1. Refer traditional test case; DO NOT enter data in "To" field and try to send an email
+Expected result 1: An appropriate error message should pops-up to notify users to enter recipient in "To" field and user should not able to send an email successfully
+
+***************************************************************************************************************************
+
+Scenario 2: Empty Subject Field
+
+Action 1. Refer traditional test case; DO NOT enter data in "Subject" field and try to send an email
+Expected result 1: An appropriate error message should pops-up to notify users to enter data in "Subject" field and user should not able to send an email successfully
+
+***************************************************************************************************************************
+
+Scenario 3: Enter data in Subject Field except "Incubyte"
+
+Action 1. Refer traditional test case; Enter data in "Subject" field except "Incubyte" and try to send an email
+Expected result 1: An appropriate error message should pops-up to notify users to enter data in "Subject" field as "Incubyte" and user should not able to send an email successfully
+
+***************************************************************************************************************************
+
+Scenario 4: Empty body
+
+Action 1. Refer traditional test case; DO NOT enter data in "Body" field and try to send an email
+Expected result 1: An appropriate error message should pops-up to notify users to enter data in "Body" field and user should not able to send an email successfully
+
+***************************************************************************************************************************
+
+Scenario 5: Enter data in Body Field except " QA test for Incubyte"
+
+Action 1. Refer traditional test case; Enter data in "Body" field except " QA test for Incubyte" and try to send an email
+Expected result 1: An appropriate error message should pops-up to notify users to enter data in "Body" field as " QA test for Incubyte" and user should not able to send an email successfully
+
+***************************************************************************************************************************
+
+Scenario 6: Enter invalid recipient email address
+
+Action 1. Refer traditional test case; Add invalid recipient email address[add whitespace in mail id] and try to send an email
+Expected result 1: An appropriate error message should visible to notify users to correct entered email address and user should not able to send an email successfully
+
+***************************************************************************************************************************
+
+Scenario 7: Send an email without Internet connection
+
+Pre-requisite: Ensure that there is no Internet connection established
+Action 1. Refer traditional test case; Enter all required data and try to send an email
+Expected result 1: An appropriate error message should visible to notify users to connect device with Internet and retry, and user should not able to send an email successfully
+
+***************************************************************************************************************************
+
+Scenario 8: Cancel email composition
+
+Action 1. Refer traditional test case; Enter all required data and click on "Trash" icon
+Expected result 1: A composition window should close and user should not able to send an email successfully and user should not able to send an email successfully
+
+***************************************************************************************************************************
+
+Scenario 9: Reverse the sending process via "Undo" option to sent mail
+
+Action 1. Refer traditional test case; Enter all required data and try to send an email. Once confirmation message pops-up, click on "Undo" option
+Expected result 1: User should able to send an email successfully but then the reverse process should happen and an email should visible under "Draft" folder with the correct subject, body, and date & time

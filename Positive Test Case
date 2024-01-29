@@ -1,0 +1,6 @@
+Positive Test Case:
+
+Scenario: Compose and Send Successful Email
+
+Action 1: Perform all the steps in Traditional Test Case
+Expected Result 1: The email is successfully composed, sent, and appears in the "Sent" folder with the correct subject and body
